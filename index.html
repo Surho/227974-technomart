@@ -6,8 +6,8 @@
   </head>
   <body>
       <header class="index-header">
-          <div class="container">
-              <div class="header-top">
+          <div class="header-top">
+              <div class="container">
                   <div class="header-logo">
                       <h1>Техномарт</h1>
                   </div>
@@ -24,6 +24,8 @@
                       <a href="#">Оформить заказ</a>
                   </div>
               </div>
+          </div>
+          <div class="container">
               <div class="header-info">
                   <div class="discription">
                       <p>Интернет-магазин
@@ -228,26 +230,6 @@
                   <a href="#"><img src="http://placehold.it/150x100" alt="map"></a>
                   <button type="button">Заблудились? Напишите нам!</button>
               </div>
-              <div class="information-popup">
-                  <a class="close" href="#">
-                      <img src="http://placehold.it/150x100" alt="cross">
-                  </a>
-                  <form action="#" method="post">
-                      <label>
-                          <p>Ваше имя:</p>
-                          <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-                      </label>
-                      <label>
-                          <p>Ваш Email:</p>
-                          <input type="text" name="email" value="" placeholder="Для отправки ответа">
-                      </label>
-                      <label>
-                          <p>Текст письма:</p>
-                          <textarea name="message">"В свободной форме"</textarea>
-                      </label>
-                      <button type="submit">Отправить</button>
-                  </form>
-              </div>
           </div>
       </main>
       <footer>
@@ -299,5 +281,27 @@
               </div>
           </div>
       </footer>
+      <div class="information-popup">
+          <a class="close" href="#">
+              <img src="http://placehold.it/150x100" alt="cross">
+          </a>
+          <div class="information-popup-actions">
+              <form action="#" method="post">
+                  <label>
+                      <p>Ваше имя:</p>
+                      <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+                  </label>
+                  <label>
+                      <p>Ваш Email:</p>
+                      <input type="text" name="email" value="" placeholder="Для отправки ответа">
+                  </label>
+                  <label>
+                      <p>Текст письма:</p>
+                      <textarea name="message">"В свободной форме"</textarea>
+                  </label>
+                  <button type="submit">Отправить</button>
+              </form>
+          </div>
+      </div>
   </body>
 </html>
