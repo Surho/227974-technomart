@@ -29,7 +29,7 @@ h2 {
 }
 .header {
   min-height:320px;
-  margin-bottom:60px;
+  border:1px solid transparent;
 }
 .header-top {
   min-height:42px;
@@ -37,7 +37,7 @@ h2 {
 }
 .header-info {
   min-height:72px;
-  margin-bottom:54px;
+  margin-bottom:42px;
 }
 .header-navigation {
   min-height:56px;
@@ -58,14 +58,15 @@ h2 {
 .header-top .bookmarks,
 .header-top .cart,
 .header-top .order {
-  font-size:17px;
   width:150px;
   min-height:42px;
+  font-size:17px;
+  line-height:18px;
 }
 .header-logo {
   width:220px;
-  margin-right:10px;
   min-height:42px;
+  margin-right:10px;
   font-size:24px;
 }
 .header-top .search {
@@ -87,33 +88,55 @@ h2 {
 }
 .header .discription {
   font-size:16px;
+  line-height:23px;
+  font-family:Cuprum;
+  font-style:italic;
+}
+.header .discription p {
+  margin:0;
 }
 .header .contacts .phone {
-  font-size:21px
+  font-size:21px;
+  line-height:18px;
+}
+.header .contacts p {
+  margin:0;
 }
 .header .contacts .adress {
   font-size:14px;
+  line-height:24px;
 }
 .header-info .user-area {
   width:300px;
   font-size:21px;
+  line-height:18px;
 }
 .user-area .register,
 .user-area .login {
   display:inline-block;
 }
+.user-info {
+  padding-top:9px;
+}
+.user-info a{
+  font-size:16px;
+  line-height:18px;
+}
 
+.index-main {
+  margin-top:60px;
+}
 .index-main .categories {
   min-height:410px;
   margin-bottom:55px;
 }
 .categories .categories-item {
+  float:left;
+  position:relative;
   width:300px;
   min-height:124px;
   margin-right:20px;
   margin-bottom:20px;
-  float:left;
-  position:relative;
 }
 .categories .categories-item img{
   position:absolute;
@@ -121,7 +144,7 @@ h2 {
   right:20px;
 }
 .categories .categories-item:nth-child(3),
-.categories .categories-item:nth-child(4),
+.categories .categories-item:nth-child(5),
 .categories .categories-item:nth-child(6) {
   float:right;
   margin-right:0;
@@ -142,7 +165,8 @@ h2 {
   margin-bottom:20px;
 }
 .popular-title h2 {
-  float:left
+  float:left;
+  margin-left:28px;
 }
 .title-view-all{
   float:right;
@@ -180,6 +204,7 @@ h2 {
 }
 .manufacturers-title h2 {
   float:left;
+  margin-left:28px;
 }
 .manufacturers-content {
   margin-bottom:66px;
@@ -196,11 +221,10 @@ h2 {
 .manufacturers-item:nth-child(4n) {
   margin-right:0px;
 }
-.service {
-  margin-bottom:82px;
-}
+
 .service .service-info h2{
   padding-top:68px;
+  margin-bottom:35px;
   font-size:30px;
   line-height:24px;
 }
@@ -239,7 +263,8 @@ h2 {
   z-index:-1;
 }
 .information {
-  min-height:370px;
+  padding-top:81px;
+  padding-bottom:87px;
 }
 .information::after {
   content:"";
@@ -247,12 +272,18 @@ h2 {
   clear:both;
 }
 .information .information-about {
-  width:630px;
   float:left;
+  min-height:370px;
+  width:630px;
 }
 .information .information-contacts {
-  width:300px;
   float:right;
+  min-height:370px;
+  width:300px;
+}
+.information .information-about h2,
+.information .information-contacts h2 {
+  margin-top:0;
 }
 
 footer {
@@ -267,19 +298,19 @@ footer {
   clear:both;
 }
 .footer-top .footer-logo{
+  float:left;
   width:220px;
   min-height:70px;
-  float:left;
 }
 .footer-top .footer-contacts {
+  float:left;
   width:380px;
   min-height:45px;
-  float:left;
 }
 .footer-top .footer-navigation {
+  float:right;
   width:550px;
   min-height:70px;
-  float:right;
 }
 .footer-top .footer-navigation li {
   display:inline-block;
@@ -294,11 +325,10 @@ footer {
 .footer-bottom {
   min-height:107px;
   font-size:0;
-  vertical-align: top;
 }
 .footer-bottom .container > * {
   display:inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .footer-bottom .footer-copyright{
   width:240px;
@@ -321,6 +351,94 @@ footer {
   font-size:16px;
   line-height:18px;
 }
+.footer-bottom .footer-credits p{
+  margin-left:39px;
+}
+
+/*catalog.html*/
+.catalog-main {
+
+}
+.catalog-main .container::after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.catalog-main h1 {
+  min-height:89px;
+  margin:0;
+  margin-bottom:21px;
+  padding-right:30px;
+  padding-top:33px;
+  box-sizing: border-box;
+}
+.catalog-main .breadcrumbs ul {
+  margin:0;
+}
+
+.catalog-main .breadcrumbs {
+  min-height:58px;
+}
+.catalog-main .breadcrumbs li {
+  display:inline-block;
+}
+.catalog-main .filter {
+  width:220px;
+  min-height: 746px;
+  margin-right:20px;
+  float:left;
+}
+.goods {
+  float:right;
+  font-size:0;
+  margin-bottom:60px;
+}
+.goods .goods-sort {
+  width:700px;
+  min-height:38px;
+  font-size:13px;
+  margin-bottom:21px;
+}
+.goods .goods-sort ul,
+.goods .goods-sort li,
+.goods .goods-sort p {
+  display:inline-block;
+}
+.goods .goods-content {
+  width:700px;
+  margin-bottom:32px;
+}
+.goods .goods-item {
+  width:220px;
+  min-height:318px;
+  margin-right:20px;
+  margin-bottom:21px;
+  display:inline-block;
+  vertical-align: top;
+  font-size:18px;
+}
+.goods .goods-item:nth-child(3n) {
+    margin-right:0px;
+}
+.goods .goods-pages {
+  font-size:13px;
+}
+.goods .goods-pages ul {
+  margin:0;
+}
+.catalog-main .additional h2 {
+  margin:0;
+  margin-bottom:35px;
+  line-height:24px;
+}
+.catalog-main .additional p {
+  margin:0;
+  line-height:24px;
+}
+.catalog-main .additional {
+  padding-top:68px;
+  padding-bottom:61px;
+}
 /*Временное оформление блоков*/
 .header-top .container > *,
 .header-info > *,
@@ -333,7 +451,11 @@ footer {
 .service > .container > *,
 .information > *,
 .footer-top .container> *,
-.footer-bottom .container> * {
+.footer-bottom .container> *,
+.goods .goods-sort,
+.goods .goods-pages,
+.goods .goods-item,
+.additional > * {
   background-color:rgba(234,195,117,0.5);
   outline:2px solid #eac375;
 }
@@ -346,7 +468,9 @@ footer {
 .service,
 .information,
 .footer-bottom,
-.footer-top {
+.footer-top,
+.catalog-main .container > *,
+.additional {
   background-color:rgba(14,164,89,0.5);
   outline:2px solid #0ea459;
 }
