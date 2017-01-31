@@ -28,7 +28,6 @@ h2 {
   margin-top:0;
 }
 .header {
-  min-height:320px;
   border:1px solid transparent;
 }
 .header-top {
@@ -55,11 +54,10 @@ h2 {
 .header-info {
   font-size:0;
 }
-.header-top .bookmarks,
-.header-top .cart,
-.header-top .order {
+.header-bookmarks,
+.header-cart,
+.header-order {
   width:150px;
-  min-height:42px;
   font-size:17px;
   line-height:18px;
 }
@@ -69,40 +67,36 @@ h2 {
   margin-right:10px;
   font-size:24px;
 }
-.header-top .search {
+.header-search {
   width:230px;
   margin-right:10px;
-  min-height:42px;
 }
-.header-top .bookmarks {
+.header-bookmarks,
+.header-cart {
   margin-right:10px;
 }
-.header-top .cart {
-  margin-right:10px;
-}
-
-.header-info .discription,
-.header-info .contacts {
+.header-discription,
+.header-contacts {
   width:310px;
   margin-right:10px;
 }
-.header .discription {
+.header-discription {
   font-size:16px;
   line-height:23px;
   font-family:"Cuprum", sans-serif;
   font-style:italic;
 }
-.header .discription p {
+.header-discription p {
   margin:0;
 }
-.header .contacts .phone {
+.header-contacts .phone {
   font-size:21px;
   line-height:18px;
 }
-.header .contacts p {
+.header-contacts p {
   margin:0;
 }
-.header .contacts .adress {
+.header-contacts .adress {
   font-size:14px;
   line-height:24px;
 }
@@ -122,40 +116,38 @@ h2 {
   font-size:16px;
   line-height:18px;
 }
-
 .index-main {
   margin-top:60px;
 }
-
 .index-main .categories {
   min-height:410px;
   margin-bottom:55px;
 }
-.categories .categories-left {
+.categories-left {
   float:left;
   width:620px;
   margin-right:20px;
 }
-.categories .categories-right {
+.categories-right {
   float:right;
   width:300px;
 }
-.categories .categories-item {
+.categories-item {
   float:left;
   position:relative;
   width:300px;
   min-height:124px;
   margin-bottom:20px;
 }
-.categories-left .categories-item:first-child {
+.categories-item:first-child {
   margin-right:20px;
 }
-.categories .categories-item img{
+.categories-item img{
   position:absolute;
   top:20px;
   right:20px;
 }
-.categories .categories-slider {
+.categories-slider {
   width:620px;
   min-height:267px;
   float:left
@@ -170,7 +162,7 @@ h2 {
   min-height:89px;
   margin-bottom:20px;
 }
-.popular .popular-title {
+.popular-title {
   float:left;
   margin-left:28px;
 }
@@ -191,17 +183,17 @@ h2 {
   margin-bottom:20px;
   font-size:0;
 }
-.popular-goods .goods-item {
+.popular-item {
   width:220px;
   min-height:318px;
   margin-right:20px;
   display:inline-block;
   vertical-align: top;
 }
-.popular-goods .goods-item p {
+.popular-item p {
   font-size:18px;
 }
-.popular-goods .goods-item:last-child {
+.popular-item:last-child {
   margin-right:0;
 }
 
@@ -229,13 +221,13 @@ h2 {
   margin-right:0px;
 }
 
-.service .service-info h2{
+.service-info h2{
   padding-top:68px;
   margin-bottom:35px;
   font-size:30px;
   line-height:24px;
 }
-.service .service-info {
+.service-info {
   width:400px;
   margin-bottom:72px;
 }
@@ -244,26 +236,26 @@ h2 {
   display:table;
   clear:both;
 }
-.service-sldier .slider-switch {
+.service-switch {
   width:240px;
   min-height:182px;
   float:left;
 }
-.service-sldier .slider-switch label{
+.service-switch label{
   min-height:62px;
 }
-.service-sldier .service-slide-delivery,
-.service-sldier .service-slide-warranty,
-.service-sldier .service-slide-credit  {
+.service-slide-delivery,
+.service-slide-warranty,
+.service-slide-credit  {
   width:700px;
   min-height:329px;
   float:right;
   position:relative;
   z-index:1;
 }
-.service-sldier .service-slide-delivery img,
-.service-sldier .service-slide-warranty img,
-.service-sldier .service-slide-credit img {
+.service-slide-delivery img,
+.service-slide-warranty img,
+.service-slide-credit img {
   position:absolute;
   top:0;
   left:-9px;
@@ -278,18 +270,18 @@ h2 {
   display:table;
   clear:both;
 }
-.information .information-about {
+.information-about {
   float:left;
   min-height:370px;
   width:630px;
 }
-.information .information-contacts {
+.information-contacts {
   float:right;
   min-height:370px;
   width:300px;
 }
-.information .information-about h2,
-.information .information-contacts h2 {
+.information-about h2,
+.information-contacts h2 {
   margin-top:0;
 }
 
@@ -299,37 +291,37 @@ footer {
 .footer-top {
   min-height:193px;
 }
-.footer-top .footer-left {
+.footer-top-left {
   float:left;
   width:380px;
 }
-.footer-top .footer-right {
+.footer-top-right {
   float:right;
   width:550px;
 }
-.footer-top .footer-logo{
+.footer-logo{
   float:left;
   width:220px;
   min-height:70px;
 }
-.footer-top .footer-contacts {
+.footer-contacts {
   float:left;
   width:380px;
   min-height:45px;
 }
-.footer-top .footer-navigation {
+.footer-navigation {
   float:right;
   width:550px;
   min-height:70px;
 }
-.footer-top .footer-navigation li {
+.footer-navigation li {
   display:inline-block;
 }
-.footer-top .footer-categories {
+.footer-categories {
   width:550px;
   float:right;
 }
-.footer-top .footer-categories li {
+.footer-categories li {
   display:inline-block;
 }
 .footer-top .container::after {
@@ -345,28 +337,28 @@ footer {
   display:inline-block;
   vertical-align: middle;
 }
-.footer-bottom .footer-copyright{
+.footer-copyright{
   width:240px;
   margin-right:150px;
   font-size:16px;
   line-height:18px;
 }
-.footer-bottom .footer-social {
+.footer-social {
   width:150px;
   margin-right:100px;
   font-size:14px;
 }
-.footer-bottom .footer-feedback {
+.footer-feedback {
   width:150px;
   font-size:16px;
   line-height:18px;
 }
-.footer-bottom .footer-credits {
+.footer-credits {
   width:150px;
   font-size:16px;
   line-height:18px;
 }
-.footer-bottom .footer-credits p{
+.footer-credits p{
   margin-left:39px;
 }
 
