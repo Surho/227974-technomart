@@ -77,23 +77,19 @@
               <div class="catalog-main-content">
                   <div class="catalog-filter">
                       <form action="#" method="post">
-                          <p>Фильтр:</p>
+                          <p class="filter-title">Фильтр:</p>
                           <div class="filter-price">
-                              <h3>Цена:</h3>
+                              <h3 class="filter-heading filter-heading-price">Цена:</h3>
                               <div class="filter-price-scroller">
-                                  <!--????-->
+                                  <div class="filter-range"></div>
                               </div>
-                              <div class="filter-price-min">
-                                  <p>0</p>
-                              </div>
-                              <div class="filter-price-between">
-                                  <p>-</p>
-                              </div>
-                              <div class="filter-price-max">
-                                  <p>30000</p>
+                              <div class="filter-prices">
+                                  <p class="filter-price-min">0</p>
+                                  <p class="filter-price-between">&mdash;</p>
+                                  <p class="filter-price-max">30000</p>
                               </div>
                           </div>
-                          <h2>Производители</h2>
+                          <h3 class="filter-heading">Производители</h3>
                           <label>
                               <img src="img/icon-check-off.png" width="23" heigth="23" alt="tick">
                               <input type="checkbox" name="bosch">
@@ -119,7 +115,7 @@
                               <input type="checkbox" name="hitachi">
                               <p>Hitachi</p>
                           </label>
-                          <h2>Питание</h2>
+                          <h3 class="filter-heading">Питание</h3>
                           <label>
                               <input id="battary" type="radio" name="power">
                               <p>аккумуляторные</p>

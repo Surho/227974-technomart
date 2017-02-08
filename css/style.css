@@ -1014,10 +1014,92 @@ h2 {
   clear:both;
 }
 .catalog-filter {
+  float:left;
+  margin-right:20px;
   width:220px;
   min-height: 746px;
-  margin-right:20px;
-  float:left;
+  text-transform: uppercase;
+}
+.filter-title {
+  margin:0;
+  margin-bottom:13px;
+  padding:10px 0px;
+  padding-left:18px;
+  font-size:13px;
+  line-height:18px;
+  text-transform: uppercase;
+  border-radius:3px;
+  background-color:#f7f3ec;
+}
+.filter-heading {
+  margin:0;
+  font-size:17px;
+  line-height:30px;
+  font-weight:700;
+  margin-bottom:14px;
+}
+.filter-heading-price {
+  margin-bottom:14px;
+}
+.filter-price-scroller {
+  margin-bottom:6px;
+  width:218px;
+  padding:1px;
+  min-height:80px;
+  background-color:#f7f3ec;
+}
+.filter-range {
+  position:relative;
+  margin:0 auto;
+  margin-top:38px;
+  width:180px;
+  height:2px;
+  background-color:#00ca74;
+  box-shadow:-30px 0 0 0px #d7dcde inset;
+}
+.filter-range::before,
+.filter-range::after {
+  content:"";
+  position:absolute;
+  top:-10px;
+  right:20px;
+  width:3px;
+  height:3px;
+  border-radius: 50%;
+  background-color:#999999;
+  border:9px solid #fff;
+  box-shadow:0 2px 2px 0px #d5d2cc;
+}
+.filter-range::after {
+  top:-10px;
+  left:0px;
+}
+.filter-prices {
+  font-size:0;
+  margin-bottom:16px;
+  padding-bottom:26px;
+  border-bottom:1px solid #e5e5e5;
+}
+.filter-price-min,
+.filter-price-max,
+.filter-price-between {
+  display:inline-block;
+  padding:10px 0;
+  margin:0;
+  vertical-align: middle;
+  font-size:17px;
+  line-height: 18px;
+  text-align:center;
+}
+.filter-price-min,
+.filter-price-max {
+  width:95px;
+  text-align:center;
+  background-color:#f7f3ec;
+  border-radius:3px;
+}
+.filter-price-between {
+  padding:0 8px;
 }
 .catalog-goods {
   float:right;
