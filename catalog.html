@@ -89,42 +89,28 @@
                                   <p class="filter-price-max">30000</p>
                               </div>
                           </div>
-                          <h3 class="filter-heading">Производители</h3>
-                          <label>
-                              <img src="img/icon-check-off.png" width="23" heigth="23" alt="tick">
-                              <input type="checkbox" name="bosch">
-                              <p>BOSCH</p>
-                          </label>
-                          <label>
-                              <img src="img/icon-check-off.png" width="23" heigth="23" alt="tick">
-                              <input type="checkbox" name="interscol">
-                              <p>Интерскол</p>
-                          </label>
-                          <label>
-                              <img src="img/icon-check-off.png" width="23" heigth="23" alt="tick">
-                              <input type="checkbox" name="makita">
-                              <p>Makita</p>
-                          </label>
-                          <label>
-                              <img src="img/icon-check-off.png" width="23" heigth="23" alt="tick">
-                              <input type="checkbox" name="dewalt">
-                              <p>Dewalt</p>
-                          </label>
-                          <label>
-                              <img src="img/icon-check-off.png" width="23" heigth="23" alt="tick">
-                              <input type="checkbox" name="hitachi">
-                              <p>Hitachi</p>
-                          </label>
-                          <h3 class="filter-heading">Питание</h3>
-                          <label>
-                              <input id="battary" type="radio" name="power">
-                              <p>аккумуляторные</p>
-                          </label>
-                          <label>
-                              <input id="electrical" type="radio" name="power">
-                              <p>Сетевые</p>
-                          </label>
-                          <a href="#" class="btn-show">Показать</a>
+                          <div class="filter-manufacturers">
+                              <h3 class="filter-heading">Производители</h3>
+                              <input type="checkbox" id="bosch" name="bosch" checked>
+                              <label for="bosch">BOSCH</label>
+                              <input type="checkbox" id="interscol" name="interscol">
+                              <label for="interscol">Интерскол</label>
+                              <input type="checkbox" id="makita" name="makita" checked>
+                              <label for="makita">Makita</label>
+                              <input type="checkbox" id="dewalt" name="dewalt">
+                              <label for="dewalt">Dewalt</label>
+                              <input type="checkbox" id="hitachi" name="hitachi">
+                              <label for="hitachi">Hitachi</label>
+                          </div>
+                          <div class="filter-power-type">
+                              <h3 class="filter-heading">Питание</h3>
+                              <input type="radio" id="battary" name="power" checked>
+                              <label for="battary">аккумуляторные</label>
+                              <input type="radio" id="electrical" name="power">
+                              <label for="electrical">Сетевые</label>
+                              <!-- <a href="#" class="btn-show">Показать</a> -->
+                          </div>
+                          <button type="submit" class="btn-show">Показать</button>
                       </form>
                   </div>
                   <div class="catalog-goods">
@@ -233,10 +219,10 @@
                       </div>
                       <div class="goods-pages">
                           <ul>
-                              <li><a>1</a></li>
+                              <li><a class="current">1</a></li>
                               <li><a href="#">2</a></li>
                               <li><a href="#">3</a></li>
-                              <li><a href="#">Следующая</a></li>
+                              <li><a class="pages-next" href="#">Следующая</a></li>
                           </ul>
                       </div>
                   </div>
