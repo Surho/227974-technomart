@@ -1107,19 +1107,18 @@ h2 {
 .catalog-goods .goods-sort {
   width:700px;
   margin-bottom:13px;
-  padding:10px 0px;
-  font-size:0;
+  padding:11px 0px;
+  font-size:13px;
+  line-height:18px;
   text-transform: uppercase;
   border-radius:3px;
   background-color:#f7f3ec;
 }
 .goods-sort ul,
 .goods-sort li,
-.goods-sort p {
+.goods-sort p,
+.sort-up-down {
   display:inline;
-  font-size:13px;
-  line-height:18px;
-
 }
 .goods-sort a {
   text-decoration:none;
@@ -1134,8 +1133,7 @@ h2 {
 }
 .goods-sort-title {
   padding-left:19px;
-  margin-right:140px;
-  margin-right:142px;
+  margin-right:138px;
 }
 .goods-sort ul {
   padding:0;
@@ -1153,7 +1151,6 @@ h2 {
 .goods-sort .sort-down {
   display:inline-block;
   vertical-align: middle;
-  margin-right:10px;
   width:0px;
   height:0px;
   border:5px solid black;
@@ -1165,16 +1162,24 @@ h2 {
   overflow: hidden;
   opacity:0.3;
 }
+.goods-sort .sort-by-down {
+  border-bottom:none;
+  margin:0;
+}
 .goods-sort .sort-up {
   margin-right:20px;
+}
+.goods-sort .sort-down {
+  border-top-width:10px;
+  border-bottom-width:0px;
 }
 .goods-sort .sort-up:hover,
 .goods-sort .sort-down:hover {
   opacity:1;
 }
-.goods-sort .sort-down {
-  border-top-width:10px;
-  border-bottom-width:0px;
+.goods-sort .sort-up:active,
+.goods-sort .sort-down:active {
+  border-
 }
 .goods-sort .sort-by-price {
   margin-right:68px;
@@ -1184,14 +1189,6 @@ h2 {
 }
 .goods-sort .sort-by-function {
   margin-right:44px;
-}
-.goods-sort .sort-by-down {
-  border-bottom:none;
-  margin:0;
-}
-.sort-up-down {
-  display:inline-block;
-  vertical-align: top;
 }
 .goods-content {
   width:700px;
