@@ -11,7 +11,7 @@
       <header class="header">
           <div class="header-top">
               <div class="container">
-                  <div class="header-logo">
+                  <div class="header-logo-main">
                       <h1>Техномарт</h1>
                   </div>
                   <div class="header-search">
@@ -126,7 +126,7 @@
                       </div>
                   </div>
                   <div class="popular-item">
-                      <img src="img/drill-bfg-2000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
+                      <img src="img/drill-bfg-3000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
                       <p class="product-name">Перфоратор <span>BOSCH BFG 3000</span></p>
                       <p class="price-old">22500 Р.</p>
                       <p class="price-discount">15500 Р.</p>
@@ -315,20 +315,31 @@
           </div>
       </footer>
       <div class="information-popup">
-          <a class="close" href="#">
-              <img src="img/cross.svg" alt="cross" width="24" height="24">
-          </a>
+          <button class="popup-close popup-close-information" type="button" title="Закрыть">Закрыть</button>
           <div class="information-popup-actions">
               <form action="#" method="post">
-                  <label for="form-name">Ваше имя:</label>
-                  <input type="text" name="name" id="form-name" value="" placeholder="Представьтесь, пожалуйста">
-                  <label for="form-email">Ваш Email:</label>
-                  <input type="text" id="form-email" name="email" value="" placeholder="Для отправки ответа">
-                  <label for="form-message">Текст письма:</label>
-                  <textarea name="message" id="form-message">"В свободной форме"</textarea>
-                  <button type="submit">Отправить</button>
+                  <div class="name">
+                      <label for="form-name">Ваше имя:</label>
+                      <input type="text" name="name" id="form-name" value="" placeholder="Представьтесь, пожалуйста">
+                  </div>
+                  <div class="email">
+                      <label for="form-email">Ваш e-mail:</label>
+                      <input type="text" id="form-email" name="email" value="" placeholder="Для отправки ответа">
+                  </div>
+                  <div class="message">
+                      <label for="form-message">Текст письма:</label>
+                      <textarea name="message" id="form-message" placeholder="В свободной форме"></textarea>
+                  </div>
+                  <button class="btn btn-information-popup" type="submit">Отправить</button>
               </form>
           </div>
       </div>
+      <div class="map-popup">
+          <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+          <div class="map-popup-google">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1333.900946675588!2d30.321184263369084!3d59.93889213677454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1486824621180" width="940" height="445" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+      </div>
+      <div class="map-overlay"></div>
   </body>
 </html>

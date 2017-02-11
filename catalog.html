@@ -8,11 +8,11 @@
     <title>HTML Academy: Техномарт-каталог</title>
   </head>
   <body>
-      <header class="header inner">
+      <header class="header header-inner">
           <div class="header-top">
               <div class="container">
-                  <div class="header-logo">
-                      <h1>Техномарт</h1>
+                  <div class="header-logo-inner">
+                      <a href="index.html">Техномарт</a>
                   </div>
                   <div class="header-search">
                       <input type="search" name="search" value="Поиск:">
@@ -52,7 +52,7 @@
           <div class="container">
               <nav class="header-navigation">
                   <ul>
-                      <li><a class="navigation-main">Главная</a></li>
+                      <li><a href="index.html" class="navigation-main">Главная</a></li>
                       <li><a href="#">Компания</a></li>
                       <li><a href="catalog.html">Каталог</a></li>
                       <li><a href="#">Новости</a></li>
@@ -128,13 +128,13 @@
                       </div>
                       <div class="goods-content">
                           <div class="goods-item">
-                              <img src="img/drill-bfg-2000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
+                              <img src="img/drill-bfg-3000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
                               <p class="product-name">Перфоратор BOSCH BFG 3000</p>
                               <p class="price-old">22500 Р.</p>
                               <p class="price-discount">15500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item">
@@ -144,7 +144,7 @@
                               <p class="price-discount">25500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item new">
@@ -155,17 +155,17 @@
                             </div>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item">
-                              <img src="img/drill-bfg-2000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
+                              <img src="img/drill-bfg-3000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
                               <p class="product-name">Перфоратор BOSCH BFG 3000</p>
                               <p class="price-old">22500 Р.</p>
                               <p class="price-discount">15500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item new">
@@ -175,7 +175,7 @@
                               <p class="price-discount">25500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item">
@@ -184,17 +184,17 @@
                               <p class="price-discount no-old-price">12500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item new">
-                              <img src="img/drill-bfg-2000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
+                              <img src="img/drill-bfg-3000.jpg" alt="BOSCH BFG 3000" width="218" height="167">
                               <p class="product-name">Перфоратор BOSCH BFG 3000</p>
                               <p class="price-old">22500 Р.</p>
                               <p class="price-discount">15500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item">
@@ -204,7 +204,7 @@
                               <p class="price-discount">25500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                           <div class="goods-item">
@@ -213,7 +213,7 @@
                               <p class="price-discount no-old-price">12500 Р.</p>
                               <div class="goods-item-buy">
                                   <a class="btn-buy" href="#">Купить</a>
-                                  <a class="btn-bookmark">В закладки</a>
+                                  <a class="btn-bookmark" href="#">В закладки</a>
                               </div>
                           </div>
                       </div>
@@ -296,13 +296,14 @@
           </div>
       </footer>
       <div class="cart-popup">
-          <a class="close" href="#">
-              <img src="img/cross.svg" alt="cross" width="24" height="24">
-          </a>
-          <h2>Товар добавлен в корзину!</h2>
+          <button class="popup-close popup-close-cart" type="button" title="Закрыть">Закрыть</button>
+          <div class="cart-popup-message">
+              <div class="cart-popup-success">Товар добвлен</div>
+              <h2>Товар добавлен в корзину!</h2>
+          </div>
           <div class="cart-popup-actions">
-              <button type="button" class="btn-order">Офорить-заказ</button>
-              <button type="button" class="btn-order-continue">Продолжить покупки</button>
+              <a href="#" class="btn btn-order">Офорить-заказ</a>
+              <a href="#" class=" btn btn-order-continue">Продолжить покупки</a>
           </div>
       </div>
   </body>
