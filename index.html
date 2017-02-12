@@ -75,24 +75,32 @@
                           <a  class="btn btn-categories" href="#">На все случаи</a>
                       </div>
                       <div class="categories-slider">
-                          <div class="categories-slide-1">
-                              <img src="img/slide1.jpg" alt="Слайд1" width="620" height="266">
-                              <div class="slider-info">
-                                  <h2>Перфораторы</h2>
-                                  <p>Настоящие мужские игрушки</p>
-                                  <a href="#" class="btn slider-top-button">Открыть каталог</a>
+                          <input type="radio" id="slider-left" name="top-slider-switch" checked>
+                          <input type="radio" id="slider-right" name="top-slider-switch">
+                          <label for="slider-left"><img class="categories-slider-left" src="img/icon-left.png" alt="Влево" width="22" height="40"></label>
+                          <label for="slider-right"><img class="categories-slider-right" src="img/icon-right.png" alt="Вправо" width="22" height="40"></label>
+                          <input type="radio" id="slider-left-alt" name="top-slider-switch" checked>
+                          <input type="radio" id="slider-right-alt" name="top-slider-switch">
+                          <label for="slider-left-alt">Левый Слайд</label>
+                          <label for="slider-right-alt">Правый слайд</label>
+                          <div class="categories-slides">
+                              <div class="categories-slide-1">
+                                  <img src="img/slide1.jpg" alt="Слайд1" width="620" height="266">
+                                  <div class="slider-info">
+                                      <h2>Перфораторы</h2>
+                                      <p>Настроящие мужские игрушки</p>
+                                      <a href="#" class="btn slider-top-button">Открыть каталог</a>
+                                  </div>
+                              </div>
+                              <div class="categories-slide-2">
+                                  <img src="img/slide2.jpg" alt="Слайд2" width="620" height="266">
+                                  <div class="slider-info">
+                                      <h2>Дрели</h2>
+                                      <p>Соседям на радость!</p>
+                                      <a href="#" class="btn slider-top-button">Открыть каталог</a>
+                                  </div>
                               </div>
                           </div>
-                          <div class="categories-slide-2">
-                              <img src="img/slide2.jpg" alt="Слайд2" width="620" height="266">
-                              <div class="slider-info">
-                                  <h2>Дрели</h2>
-                                  <p>Соседям на радость!</p>
-                                  <a href="#" class="btn slider-top-button">Открыть каталог</a>
-                              </div>
-                          </div>
-                          <img class="categories-slider-right" src="img/icon-right.png" alt="Вправо" width="22" height="40">
-                          <img class="categories-slider-left" src="img/icon-left.png" alt="Влево" width="22" height="40">
                       </div>
                   </div>
                   <div class="categories-right">
@@ -341,5 +349,17 @@
           </div>
       </div>
       <div class="map-overlay"></div>
+      <div class="cart-popup">
+          <button class="popup-close popup-close-cart" type="button" title="Закрыть">Закрыть</button>
+          <div class="cart-popup-message">
+              <div class="cart-popup-success">Товар добвлен</div>
+              <h2>Товар добавлен в корзину!</h2>
+          </div>
+          <div class="cart-popup-actions">
+              <a href="#" class="btn btn-order">Оформить-заказ</a>
+              <a href="#" class=" btn btn-order-continue">Продолжить покупки</a>
+          </div>
+      </div>
+      <script src="js/script.js"></script>
   </body>
 </html>
