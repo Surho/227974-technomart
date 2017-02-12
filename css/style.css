@@ -188,8 +188,8 @@ h2 {
   font-size:0;
 }
 .header-discription {
-  width:310px;
-  margin-right:10px;
+  width:250px;
+  margin-right:70px;
 }
 .header-contacts {
   width:270px;
@@ -198,7 +198,7 @@ h2 {
 .header-discription {
   font-size:16px;
   line-height:23px;
-  font-family:"Cuprum", sans-serif;
+  font-family: "Cuprum","Times New Roman", sans-serif;
   font-style:italic;
   color:#ee3643;
 }
@@ -302,34 +302,53 @@ h2 {
   position:relative;
   width:100%;
 }
+.user-personal {
+  background:#fff;
+}
 .user-logged-in .user-name{
   display:block;
   box-sizing: border-box;
   padding:13px 0px;
-  padding-right:24px;
+  padding-right:22px;
   text-align:center;
   color:#000;
-  background-color:#fff;
   text-decoration:none;
 }
-.user-logged-in::before,
-.user-logged-in::after {
-  content:"";
+.user-logged-in .profile {
   position:absolute;
-  background:url("../img/spritesheet-icons.png") no-repeat;
-}
-.user-logged-in::before {
+  font-size:0;
+  line-height: 0;
   top:13px;
   left:15px;
   width:20px;
   height:18px;
-  background-position:-403px -5px;
+  background:url("../img/spritesheet-icons.png") no-repeat -403px -5px;
 }
-.user-logged-in::after {
-  background-position:-258px -5px;
+.user-logged-in .log-out {
+  position:absolute;
+  font-size:0;
+  top:13px;
+  right:11px;
+  width: 21px;
+  height: 17px;
+  background:url("../img/spritesheet-icons.png") no-repeat -258px -5px;
 }
-.user-logged-in:hover::before {
-  background-position:-433px -5px;
+.user-name:hover ~ .profile,
+.user-logged-in .profile:hover {
+  background-position: -433px -5px;
+}
+.user-logged-in .log-out:hover {
+  background-position: -289px -5px;
+}
+.user-name:active {
+  opacity:0.3;
+}
+.user-name:active ~ .profile,
+.user-logged-in .profile:active {
+  background-position: -403px -5px;
+}
+.user-logged-in .log-out:active {
+  background-position: -258px -5px;
 }
 .user-orders {
   position:relative;
@@ -345,6 +364,14 @@ h2 {
   height:4px;
   background-color:#32425c;
   border-radius:50%;
+}
+.user-orders:hover,
+.user-account:hover {
+  color:#ee3643;
+}
+.user-orders:active,
+.user-account:active {
+  color:#dadfe3;
 }
 .header-navigation {
   margin-top:40px;
@@ -433,6 +460,13 @@ h2 {
   text-transform: uppercase;
   border-radius:3px;
   background-color:#ee3643;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color:#ca2c37;
+}
+.btn:active {
+  background-color:#ba2732;
 }
 .categories-item .btn-categories{
   width:135px;
@@ -715,6 +749,15 @@ h2 {
   color:#fff;
   background:#ee3643;
   border-radius: 3px;
+  cursor:pointer;
+}
+.popular-item .price-discount:hover,
+.goods-item .price-discount:hover {
+  background-color:#ca2c37;
+}
+.popular-item .price-discount:active,
+.goods-item .price-discount:active {
+  background-color:#ba2732;
 }
 .price-discount::after {
   content:"";
@@ -724,6 +767,18 @@ h2 {
   width:0;
   height:0;
   border:18px solid #ee3643;
+  border-right-width:0px;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+}
+.price-discount:hover::after {
+  border:18px solid #ca2c37;
+  border-right-width:0px;
+  border-top-color:transparent;
+  border-bottom-color:transparent;
+}
+.price-discount:active::after {
+  border:18px solid #ba2732;
   border-right-width:0px;
   border-top-color:transparent;
   border-bottom-color:transparent;
@@ -821,6 +876,9 @@ h2 {
   vertical-align: top;
   margin-right:20px;
   margin-bottom:20px;
+}
+.manufacturers-item:active {
+  opacity:0.3;
 }
 .manufacturers-item img {
   display:block;
@@ -1056,7 +1114,7 @@ h2 {
 .breadcrumbs li {
   position:relative;
   display:inline;
-  padding-right:36px;
+  padding-right:37px;
   font-size:13px;
   line-height:18px;
   text-transform:uppercase;
@@ -1236,10 +1294,10 @@ h2 {
   height:23px;
   top:0px;
   left:0px;
-  background:url("../img/sprite-checkbox.png") no-repeat -5px -5px;
+  background:url("../img/spritesheet-icons.png") no-repeat -56px -5px;
 }
 .catalog-filter input[type="checkbox"]:checked + label::before {
-  background-position: -38px -5px;
+  background-position:-89px -5px;
 }
 .catalog-filter input[type="radio"] + label::before {
   content:"";
@@ -1606,6 +1664,7 @@ h2 {
 }
 .information-popup-show {
   display:block;
+  animation:slide_left 0.6s ease-in-out;
 }
 .popup-close {
   position:absolute;
@@ -1699,14 +1758,15 @@ h2 {
   width:940;
   height:447px;
   top:50%;
-  left:50%;
+  right:50%;
   margin-top:-223px;
-  margin-left:-470px;
+  margin-right:-470px;
   background:url("../img/map-popup.jpg");
   box-shadow:0 0 40px 0px rgba(0,0,0,0.75);
 }
 .map-popup-show {
   display:block;
+  animation:slide_right 0.6s ease-in-out;
 }
 .map-overlay {
   display: none;
@@ -1720,6 +1780,7 @@ h2 {
 .cart-popup {
   display:none;
   position:fixed;
+  z-index:100;
   top:50%;
   left:50%;
   margin-left:-270px;
@@ -1733,6 +1794,7 @@ h2 {
 }
 .cart-popup-show {
   display:block;
+  animation:slide_left 0.5s ease-in-out;
 }
 .cart-popup-message h2{
   color:#000;
@@ -1786,8 +1848,22 @@ h2 {
   color:#000;
   background:#fff;
 }
+.btn-order-continue:hover {
+  background:#fff;
+}
 .cart-popup-actions::after {
   content:"";
   display:table;
   clear:both;
+}
+
+@keyframes slide_left {
+  0% {left:-100%;}
+  80% {left:55%;}
+  100% {left:50%;}
+}
+@keyframes slide_right {
+  0% {right:-100%;}
+  80% {right:55%;}
+  100% {right:50%;}
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Техномарт-каталог</title>
   </head>
@@ -31,7 +31,7 @@
           </div>
           <div class="header-info container">
               <div class="header-discription">
-                  <p>Интернет-магазин<br>
+                  <p>Интернет-магазин
                     строительных материалов<br>
                     и инструментов для ремонта</p>
               </div>
@@ -41,7 +41,11 @@
               </div>
               <div class="user-area">
                   <div class="user-logged-in">
-                      <a class="user-name" href="#">Равшан Джамшутович</a>
+                      <div class="user-personal">
+                          <a class="user-name" href="#">Равшан Джамшутович</a>
+                          <a class="profile" href="#">Профиль</a>
+                          <a class="log-out" href="#">Выйти</a>
+                      </div>
                       <div class="user-info">
                           <a class="user-orders" href="#">Мои заказы</a>
                           <a class="user-account" href="#">Личный кабинет</a>
@@ -108,7 +112,6 @@
                               <label for="battary">аккумуляторные</label>
                               <input type="radio" id="electrical" name="power">
                               <label for="electrical">Сетевые</label>
-                              <!-- <a href="#" class="btn-show">Показать</a> -->
                           </div>
                           <button type="submit" class="btn-show">Показать</button>
                       </form>
