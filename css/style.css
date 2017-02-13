@@ -83,6 +83,9 @@ h2 {
   background-color:#293449;
   border:none;
 }
+.header-search {
+  max-width: 270px;
+}
 .search-logo::before {
   content:"";
   position:absolute;
