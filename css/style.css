@@ -894,13 +894,13 @@ h2 {
   box-shadow:0 10px 25px 0 rgba(41,52,73,0.5);
 }
 .service {
+  padding-top:66px;
   background-color:#f2f6f8;
 }
 .service input[type="radio"] {
   display:none;
 }
 .service-info h2{
-  padding-top:66px;
   margin:0;
   margin-bottom:25px;
   font-size:30px;
@@ -1173,7 +1173,6 @@ h2 {
 }
 .catalog-filter {
   float:left;
-  margin-right:20px;
   width:220px;
   min-height: 746px;
   text-transform: uppercase;
@@ -1461,6 +1460,9 @@ h2 {
   color:#fff;
   background-color:#ee3643;
   border:1px solid #ee3643;
+}
+.goods-pages a:hover {
+  border-color:#bdc6ca;
 }
 .goods-pages a:active {
   border-color:#ee3643;
