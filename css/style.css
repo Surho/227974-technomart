@@ -73,6 +73,7 @@ h2 {
   vertical-align:top;
 }
 .header-search input {
+  box-sizing:border-box;
   padding-left:47px;
   padding-top:12px;
   padding-bottom:11px;
@@ -82,9 +83,6 @@ h2 {
   color:#fff;
   background-color:#293449;
   border:none;
-}
-.header-search {
-  max-width: 270px;
 }
 .search-logo::before {
   content:"";
@@ -833,6 +831,7 @@ h2 {
   display:block;
   width:129px;
   padding:4px 0;
+  color:#32425c;
   border:3px solid #63a63e;
   border-radius:3px;
 }
