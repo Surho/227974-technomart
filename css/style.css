@@ -19,7 +19,6 @@ h2 {
   color:#32425c;
   font-family: "Cuprum","Times New Roman", sans-serif;
 }
-
 .container {
   width:940px;
   padding:0 10px;
@@ -902,6 +901,10 @@ h2 {
 .service input[type="radio"] {
   display:none;
 }
+.service-info {
+  width:400px;
+  margin-bottom:25px;
+}
 .service-info h2{
   margin:0;
   margin-bottom:25px;
@@ -931,11 +934,12 @@ h2 {
 .service-slide-info p {
   display:inline-block;
   margin:0;
-  width:400px;
 }
-.service-info {
-  width:400px;
-  margin-bottom:25px;
+.delivery-slide-info {
+  width:275px;
+}
+.warranty-slide-info {
+  width:375px;
 }
 .service-sldier::after {
   content:"";
