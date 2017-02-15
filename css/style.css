@@ -591,10 +591,12 @@ h2 {
   right:22px;
 }
 #slider-left:checked ~ .categories-slides {
-  transform:translateX(0);
+  -webkit-transform:translateX(0);
+          transform:translateX(0);
 }
 #slider-right:checked ~ .categories-slides {
-  transform:translateX(-620px);
+  -webkit-transform:translateX(-620px);
+          transform:translateX(-620px);
 }
 .categories-slider label[for="slider-left-alt"],
 .categories-slider label[for="slider-right-alt"] {
@@ -613,7 +615,8 @@ h2 {
   left:295px;
 }
 #slider-left-alt:checked ~ .categories-slides {
-  transform:translateX(0);
+  -webkit-transform:translateX(0);
+          transform:translateX(0);
 }
 #slider-left-alt:checked ~ label[for="slider-left-alt"],
 #slider-left:checked ~ label[for="slider-left-alt"] {
@@ -621,7 +624,8 @@ h2 {
               0 0 0 5px #ee3643 inset;
 }
 #slider-right-alt:checked ~ .categories-slides {
-  transform:translateX(-620px);
+  -webkit-transform:translateX(-620px);
+          transform:translateX(-620px);
 }
 #slider-right-alt:checked ~ label[for="slider-right-alt"],
 #slider-right:checked ~ label[for="slider-right-alt"] {
@@ -982,7 +986,8 @@ h2 {
   float:right;
   width:700px;
   height:329px;
-  transform:translateX(-1400px);
+  -webkit-transform:translateX(-1400px);
+          transform:translateX(-1400px);
 }
 .service-slide-delivery,
 .service-slide-warranty,
@@ -1018,7 +1023,8 @@ h2 {
   background-color:#293449;
 }
 #delivery-slider:checked ~ .service-slides {
-  transform:translateX(0px);
+  -webkit-transform:translateX(0px);
+          transform:translateX(0px);
 }
 #delivery-slider:checked ~ .service-switch label[for="delivery-slider"] {
   background-color:#ffffff;
@@ -1026,7 +1032,8 @@ h2 {
   box-shadow:none;
 }
 #warranty-slider:checked ~ .service-slides {
-  transform:translateX(-700px);
+  -webkit-transform:translateX(-700px);
+          transform:translateX(-700px);
 }
 #warranty-slider:checked ~ .service-switch label[for="warranty-slider"] {
   background-color:#ffffff;
@@ -1034,7 +1041,8 @@ h2 {
   box-shadow:none;
 }
 #credit-slider:checked ~ .service-slides {
-  transform:translateX(-1400px);
+  -webkit-transform:translateX(-1400px);
+          transform:translateX(-1400px);
 }
 #credit-slider:checked ~ .service-switch label[for="credit-slider"] {
   background-color:#ffffff;
@@ -1145,11 +1153,13 @@ h2 {
   width:10px;
   height:1px;
   background-color:#c1c6ce;
-  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+          transform:rotate(45deg);
 }
 .breadcrumbs li::after {
   top:11px;
-  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+          transform:rotate(-45deg);
 }
 .breadcrumbs .current::after,
 .breadcrumbs .current::before {
@@ -1671,7 +1681,8 @@ h2 {
 }
 .information-popup-show {
   display:block;
-  animation:slide_left 0.6s ease-in-out;
+  -webkit-animation:slide_left 0.6s ease-in-out;
+          animation:slide_left 0.6s ease-in-out;
 }
 .popup-close {
   position:absolute;
@@ -1699,10 +1710,12 @@ h2 {
   background-color:#ee3643;
 }
 .popup-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .popup-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .name,
 .email {
@@ -1773,7 +1786,8 @@ h2 {
 }
 .map-popup-show {
   display:block;
-  animation:slide_right 0.6s ease-in-out;
+  -webkit-animation:slide_right 0.6s ease-in-out;
+          animation:slide_right 0.6s ease-in-out;
 }
 .map-overlay {
   display:none;
@@ -1801,7 +1815,8 @@ h2 {
 }
 .cart-popup-show {
   display:block;
-  animation:slide_left 0.5s ease-in-out;
+  -webkit-animation:slide_left 0.5s ease-in-out;
+          animation:slide_left 0.5s ease-in-out;
 }
 .cart-popup-message h2{
   color:#000000;
@@ -1833,13 +1848,15 @@ h2 {
   top:36px;
   left:16px;
   width:15px;
-  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+          transform:rotate(45deg);
 }
 .cart-popup-success::after {
   top:32px;
   left:23px;
   width:34px;
-  transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+          transform:rotate(-45deg);
 }
 .cart-popup-actions {
   margin-bottom:37px;
@@ -1866,10 +1883,20 @@ h2 {
   clear:both;
 }
 
+@-webkit-keyframes slide_left {
+  0% {left:-100%;}
+  80% {left:55%;}
+  100% {left:50%;}
+}
 @keyframes slide_left {
   0% {left:-100%;}
   80% {left:55%;}
   100% {left:50%;}
+}
+@-webkit-keyframes slide_right {
+  0% {right:-100%;}
+  80% {right:55%;}
+  100% {right:50%;}
 }
 @keyframes slide_right {
   0% {right:-100%;}
