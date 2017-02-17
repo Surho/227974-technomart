@@ -149,6 +149,7 @@ h2 {
   opacity:0.6;
 }
 .header-cart a {
+  padding:12.5px 0px;
   padding-left:50px;
 }
 .header-cart::before {
@@ -773,13 +774,13 @@ h2 {
   border-bottom-color:transparent;
 }
 .price-discount:hover::after {
-  border:18px solid #ca2c37;
+  border-left-color:#ca2c37;
   border-right-width:0px;
   border-top-color:transparent;
   border-bottom-color:transparent;
 }
 .price-discount:active::after {
-  border:18px solid #ba2732;
+  border-left-color:#ba2732;
   border-right-width:0px;
   border-top-color:transparent;
   border-bottom-color:transparent;
@@ -1117,7 +1118,7 @@ h2 {
   display:table;
   clear:both;
 }
-.breadcrumbs ul {
+.breadcrumbs {
   padding:0;
   margin:0;
   margin-top:17px;
@@ -1412,16 +1413,26 @@ h2 {
   text-indent:1000px;
   opacity:0.3;
 }
+.goods-sort .sort-down {
+  display:inline-block;
+  vertical-align: middle;
+  width:0px;
+  height:0px;
+  border:5px solid black;
+  border-top-width:10px;
+  border-bottom-width:0px;
+  border-left-color:transparent;
+  border-right-color:transparent;
+  overflow: hidden;
+  text-indent:1000px;
+  opacity:0.3;
+}
 .goods-sort .sort-by-down {
   border-bottom:none;
   margin:0;
 }
 .goods-sort .sort-up {
   margin-right:20px;
-}
-.goods-sort .sort-down {
-  border-top-width:10px;
-  border-bottom-width:0px;
 }
 .goods-sort .sort-up:hover,
 .goods-sort .sort-down:hover {
@@ -1672,6 +1683,8 @@ h2 {
   margin-top:-216px;
   margin-left:-270px;
   padding:0 80px;
+  padding-top:47px;
+  padding-bottom:37px;
   border-top:7px solid #ee3643;
   font-size:0;
   font-family: "Cuprum","Times New Roman",sans-serif;
@@ -1720,14 +1733,13 @@ h2 {
 .name,
 .email {
   display:inline-block;
+  vertical-align: top;
   width:220px;
-  margin-top:47px;
 }
 .name {
   margin-right:20px;
 }
 .information-popup [type="submit"] {
-  margin-bottom:37px;
   font-size:14px;
   line-height: 18px;
   font-family: "Cuprum","Times New Roman",sans-serif;
@@ -1882,7 +1894,6 @@ h2 {
   display:table;
   clear:both;
 }
-
 @-webkit-keyframes slide_left {
   0% {left:-100%;}
   80% {left:55%;}
