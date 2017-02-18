@@ -11,7 +11,7 @@ for(i=0; i<buy.length; i++) {
 closeCart.addEventListener("click", function(event) {
   event.preventDefault();
   cartPopup.classList.remove("cart-popup-show");
-});
+});ть
 
 
 var map=document.querySelector(".information-map");

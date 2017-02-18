@@ -16,7 +16,7 @@
                   </div>
                   <div class="header-search">
                       <input type="search" name="search" value="Поиск:">
-                      <div class="search-logo"></div>
+                      <label for="search"></label>
                   </div>
                   <div class="header-bookmarks">
                       <a href="#">Закладки: 0</a>
@@ -42,8 +42,8 @@
               <div class="user-area">
                   <div class="user-logged-in">
                       <div class="user-personal">
-                          <a class="user-name" href="#">Равшан Джамшутович</a>
                           <a class="profile" href="#">Профиль</a>
+                          <a class="user-name" href="#">Равшан Джамшутович</a>
                           <a class="log-out" href="#">Выйти</a>
                       </div>
                       <div class="user-info">
@@ -86,9 +86,9 @@
                                   <div class="filter-range"></div>
                               </div>
                               <div class="filter-prices">
-                                  <p class="filter-price-min">0</p>
+                                  <input class="filter-price-min" type="text" value="0" placeholder="0">
                                   <p class="filter-price-between">&mdash;</p>
-                                  <p class="filter-price-max">30000</p>
+                                  <input class="filter-price-max" type="text" value="30000" placeholder="30000">
                               </div>
                           </div>
                           <div class="filter-manufacturers">
@@ -118,12 +118,12 @@
                       <div class="goods-sort">
                           <p class="goods-sort-title">Сортировка</p>
                           <ul>
-                              <li class="sort-by-price"><a href="#">по цене</a></li>
+                              <li class="sort-by-price sort-active"><a class="sort-active" href="#">по цене</a></li>
                               <li class="sort-by-type"><a href="#">по типу</a></li>
                               <li class="sort-by-function"><a href="#">по функционалу</a></li>
                           </ul>
                           <div class="sort-up-down">
-                            <a class="sort-up" href="#">Вверх></a>
+                            <a class="sort-up arrow-active-up" href="#">Вверх></a>
                             <a class="sort-down" href="#">Вниз</a>
                           </div>
                       </div>
@@ -252,23 +252,19 @@
                         +7 (812) 555-05-55  </p>
                   </div>
                   <div class="footer-top-right">
-                      <nav class="footer-navigation">
-                          <ul>
-                              <li><a href="#">Компания</a></li>
-                              <li><a href="#">Новости</a></li>
-                              <li><a href="#">Каталог</a></li>
-                              <li><a href="#">Доставка</a></li>
-                              <li><a href="#">Контакты</a></li>
-                          </ul>
-                      </nav>
-                      <section class="footer-categories">
-                          <ul>
-                              <li><a href="#">Материалы</a></li>
-                              <li><a href="#">Техника</a></li>
-                              <li><a href="#">Инструмент</a></li>
-                              <li><a href="#">Спецпредложения</a></li>
-                          </ul>
-                      </section>
+                      <ul class="footer-navigation">
+                          <li><a href="#">Компания</a></li>
+                          <li><a href="#">Новости</a></li>
+                          <li><a href="#">Каталог</a></li>
+                          <li><a href="#">Доставка</a></li>
+                          <li><a href="#">Контакты</a></li>
+                      </ul>
+                      <ul class="footer-categories">
+                          <li><a href="#">Материалы</a></li>
+                          <li><a href="#">Техника</a></li>
+                          <li><a href="#">Инструмент</a></li>
+                          <li><a href="#">Спецпредложения</a></li>
+                      </ul>
                   </div>
               </div>
           </div>
