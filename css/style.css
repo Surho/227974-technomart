@@ -1262,6 +1262,10 @@ h2 {
   text-align:center;
   background-color:#f7f3ec;
 }
+.filter-price-min:focus,
+.filter-price-max:focus {
+  outline:none;
+}
 .filter-price-between {
   padding:0 8px;
 }
@@ -1810,6 +1814,7 @@ h2 {
   width:460px;
   height:114px;
   margin-bottom:74px;
+  resize:none;
 }
 .btn-information-popup {
   width:100%;
