@@ -901,7 +901,7 @@ h2 {
   width:400px;
   margin-bottom:25px;
 }
-.service-info h2{
+.service-info h2 {
   margin:0;
   margin-bottom:25px;
   font-size:30px;
@@ -985,7 +985,7 @@ h2 {
 }
 .service-slide-delivery,
 .service-slide-warranty,
-.service-slide-credit  {
+.service-slide-credit {
   position:absolute;
   z-index:1;
   width:700px;
