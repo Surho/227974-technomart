@@ -8,13 +8,13 @@ h1 {
   font-size:24px;
   line-height:24px;
   font-weight:400;
-  font-family:"Cuprum","Verdana",sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   color:#ffffff;
 }
 h2 {
   font-size:30px;
   line-height:30px;
-  font-family:"Cuprum","Verdana", sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   color:#32425c;
 }
 .container {
@@ -24,7 +24,7 @@ h2 {
 }
 .header {
   padding-bottom:60px;
-  font-family:"Cuprum","Verdana",sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   background-color:#f1f5f7;
 }
 .header-logo-main h1 {
@@ -75,9 +75,10 @@ h2 {
   padding-top:12px;
   padding-bottom:13px;
   width:270px;
+  max-height:43px;
   font-size:17px;
   line-height:18px;
-  font-family: "Cuprum","Verdana",sans-serif;
+  font-family: "Cuprum", "Verdana", sans-serif;
   color:#ffffff;
   background-color:#293449;
   border:none;
@@ -148,7 +149,9 @@ h2 {
   opacity:0.6;
 }
 .header-cart a {
-  padding:13px 0px;
+  min-height: 43px;
+  padding:0px 20px;
+  line-height: 43px;
   padding-left:50px;
 }
 .header-cart::before {
@@ -174,7 +177,9 @@ h2 {
   opacity:0.5;
 }
 .header-order a {
-  padding:13px 20px;
+  min-height: 43px;
+  padding:0px 20px;
+  line-height: 43px;
 }
 .header-info > * {
   display:inline-block;
@@ -196,7 +201,7 @@ h2 {
   font-size:16px;
   line-height:23px;
   font-style:italic;
-  font-family:"Cuprum","Verdana", sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   color:#ee3643;
 }
 .header-discription p {
@@ -419,7 +424,7 @@ h2 {
 }
 .index-main .categories {
   margin-bottom:32px;
-  font-family:"Cuprum","Verdana", sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
 }
 .categories-left {
   float:left;
@@ -453,7 +458,7 @@ h2 {
   padding:11px 0px;
   font-size:14px;
   line-height:18px;
-  font-family:"Cuprum","Verdana", sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   text-align:center;
   color:#fff;
   text-decoration:none;
@@ -577,6 +582,8 @@ h2 {
   position:absolute;
   z-index:20;
   top:114px;
+  width:22px;
+  height:40px;
   opacity:0.7;
   cursor:pointer;
 }
@@ -586,9 +593,11 @@ h2 {
 }
 .categories-slider label[for="slider-left"] {
   left:25px;
+  background:url("../img/icon-left.png") no-repeat;
 }
 .categories-slider label[for="slider-right"] {
   right:22px;
+  background:url("../img/icon-right.png") no-repeat;
 }
 #slider-left:checked ~ .categories-slides {
   -webkit-transform:translateX(0);
@@ -688,7 +697,6 @@ h2 {
   clear:both;
 }
 .popular-goods {
-  margin-bottom:20px;
   font-size:0;
 }
 .popular-item,
@@ -771,9 +779,11 @@ h2 {
 .goods-item span {
   text-transform:uppercase;
 }
-.popular-goods .popular-item:last-child,
+.popular-goods .popular-item:nth-child(4n) {
+  margin-right:0px;
+}
 .catalog-goods .goods-item:nth-child(3n) {
-    margin-right:0px;
+  margin-right:0px;
 }
 .popular-item-buy,
 .goods-item-buy {
@@ -790,7 +800,7 @@ h2 {
 .goods-item-buy a {
   font-size:14px;
   font-weight: 400;
-  font-family:"Cuprum","Verdana",sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   text-decoration:none;
   text-transform:uppercase;
 }
@@ -955,7 +965,7 @@ h2 {
   padding-left:22px;
   font-size:21px;
   line-height:30px;
-  font-family:"Cuprum","Verdana",sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   font-weight:bold;
   color:#fff;
   background-color:#32425c;
@@ -1078,7 +1088,7 @@ h2 {
   margin-bottom:35px;
   font-size:18px;
   line-height:20px;
-  font-family:"Cuprum","Verdana", sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   list-style-type:none;
 }
 .information-about li {
@@ -1486,6 +1496,7 @@ h2 {
   width:700px;
   margin-bottom:28px;
 }
+.popular-item,
 .goods-item {
   margin-bottom:21px;
 }
@@ -1556,7 +1567,7 @@ h2 {
   padding-bottom:61px;
 }
 .footer {
-  font-family:"Cuprum","Verdana", sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
 }
 .footer a {
   color:#fff;
@@ -1727,7 +1738,7 @@ h2 {
   padding-bottom:37px;
   border-top:7px solid #ee3643;
   font-size:0;
-  font-family:"Cuprum","Verdana",sans-serif;
+  font-family:"Cuprum", "Verdana", sans-serif;
   background-color:#ffffff;
   box-shadow:0 -112px 0 0 #f1f1f1 inset,
              0 20px 30px 5px rgba(0,0,0,0.75);
@@ -1782,7 +1793,7 @@ h2 {
 .information-popup [type="submit"] {
   font-size:14px;
   line-height: 18px;
-  font-family: "Cuprum","Verdana",sans-serif;
+  font-family: "Cuprum", "Verdana", sans-serif;
 }
 .name label,
 .email label,
